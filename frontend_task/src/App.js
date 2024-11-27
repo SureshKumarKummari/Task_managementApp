@@ -1,12 +1,10 @@
 //import './styles/global.css';
-import Navbar from './components/Navbar';
+import Navbar from './pages/Login';
 import React from 'react';
 
 function App() {
   return (
-    <div>
       <Navbar/>
-    </div>
   );
 }
 

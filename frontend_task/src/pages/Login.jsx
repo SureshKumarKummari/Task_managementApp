@@ -8,7 +8,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const router = useRouter();
 
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleLogin = async (e)=>{//}: React.FormEvent) => {
     e.preventDefault();
 
     try {
