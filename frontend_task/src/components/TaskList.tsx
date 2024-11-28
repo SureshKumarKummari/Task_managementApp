@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import TaskForm from './TaskForm';
 
-interface Task {
+export interface Task {
   id: string;
   title: string;
   startTime: string;
@@ -11,7 +11,7 @@ interface Task {
   status: string;
 }
 
-export default function TaskList() {
+ export default function TaskList() {
   const [tasks, setTasks] = useState<Task[]>([]);
   
   useEffect(() => {
@@ -49,3 +49,5 @@ export default function TaskList() {
     </div>
   );
 }
+
+

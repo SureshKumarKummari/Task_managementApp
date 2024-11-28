@@ -3,6 +3,7 @@ const User = require("../models/User");
 
 const authMiddleware = async (req, res, next) => {
   const token = req.header("Authorization")?.split(" ")[1];
+  console.log(token);
   if (!token) return res.status(401).json({ message: "Access denied" });
 
   try {
